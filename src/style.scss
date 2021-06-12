@@ -1,0 +1,78 @@
+body {
+    background-color: #E8F1F2;
+}
+
+.d3 .node circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 2.5px;
+}
+
+.d3 .node {
+  font: 10px sans-serif;
+  font-size: 1em;
+}
+
+.d3 .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2.5px;
+}
+
+.d3 .link.link_REQUIRED {
+}
+
+.d3 .link.link_ALTERNATIVITY {
+    stroke-linecap: square;
+    stroke-dasharray: 1,5;
+}
+
+.d3 .link.link_RECOMMENDED {
+    stroke-width: 1px;
+}
+
+
+.d3 .node_REQUIRED {
+    $required_color : #ff3c41;
+    
+    circle {
+        stroke : darken($required_color, 10%);
+        
+        &.children {
+            fill : $required_color;
+        }
+    }
+    text {
+        fill : $required_color;
+    }
+}
+
+.d3 .node_ALTERNATIVITY {
+    $alternativity_color : #0EBEFF;
+    
+    circle {
+        stroke : darken($alternativity_color, 10%);
+        
+        &.children {
+            fill : $alternativity_color;
+        }
+    }
+    text {
+        fill : $alternativity_color;
+    }
+}
+
+.d3 .node_RECOMMENDED {
+    $recommended_color : #47cf73;
+    
+    circle {
+        stroke : darken($recommended_color, 10%);
+        
+        &.children {
+            fill : $recommended_color;
+        }
+    }
+    text {
+        fill : $recommended_color;
+    }
+}

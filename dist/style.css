@@ -1,0 +1,59 @@
+body {
+  background-color: #E8F1F2;
+}
+
+.d3 .node circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 2.5px;
+}
+
+.d3 .node {
+  font: 10px sans-serif;
+  font-size: 1em;
+}
+
+.d3 .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2.5px;
+}
+
+.d3 .link.link_ALTERNATIVITY {
+  stroke-linecap: square;
+  stroke-dasharray: 1, 5;
+}
+
+.d3 .link.link_RECOMMENDED {
+  stroke-width: 1px;
+}
+
+.d3 .node_REQUIRED circle {
+  stroke: #ff090f;
+}
+.d3 .node_REQUIRED circle.children {
+  fill: #ff3c41;
+}
+.d3 .node_REQUIRED text {
+  fill: #ff3c41;
+}
+
+.d3 .node_ALTERNATIVITY circle {
+  stroke: #009fda;
+}
+.d3 .node_ALTERNATIVITY circle.children {
+  fill: #0EBEFF;
+}
+.d3 .node_ALTERNATIVITY text {
+  fill: #0EBEFF;
+}
+
+.d3 .node_RECOMMENDED circle {
+  stroke: #2fb45a;
+}
+.d3 .node_RECOMMENDED circle.children {
+  fill: #47cf73;
+}
+.d3 .node_RECOMMENDED text {
+  fill: #47cf73;
+}
